@@ -10,6 +10,8 @@ class CompaniesController < ApplicationController
   # GET /companies/1
   # GET /companies/1.json
   def show
+    @company  = Company.find params[:id]
+    @comments = @company.comments.with_state([:draft, :published])    
   end
 
   # GET /companies/new
