@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(version: 20131108093928) do
   end
 
   create_table "providers", force: true do |t|
+    t.string   "name",                     default: "", null: false
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "draft_comments_count",     default: 0
