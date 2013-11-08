@@ -5,7 +5,7 @@
 <pre>
   <%= @company.description %>
 </pre>
-
+<%= link_to "Sign in with Facebook to post comments", user_omniauth_authorize_path(:facebook) %>
 <%= render partial: 'the_comments/tree', locals: { commentable: @company, comments_tree: @comments } %>
 
 <%= link_to 'Edit', edit_company_path(@company) %> |
