@@ -12,6 +12,8 @@
   <tbody>
     <% @providers.each do |provider| %>
       <tr>
+        <td><%= provider.name %></td>
+        <td><%= provider.description %></td>
         <td><%= link_to 'Show', provider %></td>
         <td><%= link_to 'Edit', edit_provider_path(provider) %></td>
         <td><%= link_to 'Destroy', provider, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -51,11 +51,6 @@ ActiveRecord::Schema.define(version: 20131108093928) do
     t.integer  "deleted_comments_count",   default: 0
   end
 
-  create_table "reports", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"

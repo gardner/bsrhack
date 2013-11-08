@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Name:</strong>
+  <%= @provider.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @provider.description %>
+</p>
+
+
 <%= render partial: 'the_comments/tree', locals: { commentable: @provider, comments_tree: @comments } %>
 
 <%= link_to 'Edit', edit_provider_path(@provider) %> |
