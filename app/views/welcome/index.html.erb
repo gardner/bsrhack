@@ -26,8 +26,7 @@
 
 <div class="row">
   <div class="col-md-12">
-    <h1>401b.org</h1>
-    <h3>Move your money. Make an impact.</h3>
+    <h3><strong>401b.org</strong> - Move your money. Make an impact.</h3>
     <br>
     <br>
   </div>
@@ -35,11 +34,9 @@
 <div class="row">
   <div class="col-md-2">
     <ul>
-      <li>link 1
-      <li>link 1
-      <li>link 1
-      <li>link 1
-      <li>link 1
+        <% @companies.each do |company| %>
+        <li><%= link_to company.name, company %></li>
+        <% end %>
     </ul>
   </div>
   <div class="col-md-8">
@@ -50,10 +47,6 @@
       <div id="root">
       </div>
 
-      <div>
-        <input type="text" id="valbox" value="60"/>
-        <button onclick="updateVal();">Set value</button>
-      </div>
     </ul>
   </div>
 
