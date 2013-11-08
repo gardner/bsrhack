@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @company.name %></h2>
+
+<pre>
+  <%= @company.description %>
+</pre>
+
+<%= render partial: 'the_comments/tree', locals: { commentable: @company, comments_tree: @comments } %>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

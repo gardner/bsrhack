@@ -13,8 +13,13 @@ group :development, :test do
 end
 
 gem 'devise'
+
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 gem "the_comments", "~> 2.1.0"
 gem 'sanitize'
+
 
 gem 'haml'                # or gem 'slim'
 gem 'awesome_nested_set'

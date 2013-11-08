@@ -1,9 +1,7 @@
 Bsrhack::Application.routes.draw do
-  resources :providers
+  resources :companies
 
   get "welcome/index"
-  resources :reports
-
   devise_for :users
   resources :users
 
