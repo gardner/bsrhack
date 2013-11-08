@@ -7,11 +7,9 @@
 <div class="row">
     <div class="col-md-2">
         <ul>
-            <li>link 1
-            <li>link 1
-            <li>link 1
-            <li>link 1
-            <li>link 1
+            <% @companies.each do |company| %>
+                <li><%= link_to company.name, company_path(company) %></li>
+            <% end %>
         </ul>
     </div>
     <div class="col-md-10">

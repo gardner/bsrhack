@@ -1,5 +1,5 @@
 Bsrhack::Application.routes.draw do
-  resources :providers
+  resources :companies
 
   get "welcome/index"
   devise_for :users

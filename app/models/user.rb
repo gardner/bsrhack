@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   include TheComments::User
   
-  has_many :providers
+  has_many :companies
   
   def admin?
     self == User.first

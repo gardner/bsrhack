@@ -1,4 +1,4 @@
-class Provider < ActiveRecord::Base
+class Company < ActiveRecord::Base
   include TheComments::Commentable
 
   belongs_to :user
