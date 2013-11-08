@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bsrhack</title>
+  <title>401b - Move your Money. Make an Impact.</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
 
+    <div class="container">
+        <%= yield %>
+    </div>
+    
+    <center>&copy; 401b</center>
 </body>
 </html>

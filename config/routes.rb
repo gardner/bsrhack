@@ -1,4 +1,6 @@
 Bsrhack::Application.routes.draw do
+  resources :providers
+
   get "welcome/index"
   resources :reports
 
@@ -10,6 +12,8 @@ Bsrhack::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+  
+  mount TheComments::Engine => '/', as: :comments
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

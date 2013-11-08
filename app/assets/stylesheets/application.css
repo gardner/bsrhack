@@ -12,4 +12,5 @@
  *= require_tree .
  *= require jquery.mobile
  *= require bootstrap
+ *= require the_comments
  */

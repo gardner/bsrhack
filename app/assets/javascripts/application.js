@@ -15,4 +15,5 @@
 //= require jquery.mobile
 //= require bootstrap
 //= require turbolinks
+//= require the_comments
 //= require_tree .

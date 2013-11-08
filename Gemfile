@@ -13,6 +13,11 @@ group :development, :test do
 end
 
 gem 'devise'
+gem "the_comments", "~> 2.1.0"
+gem 'sanitize'
+
+gem 'haml'                # or gem 'slim'
+gem 'awesome_nested_set'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
