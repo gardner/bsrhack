@@ -30,6 +30,8 @@ class User < ActiveRecord::Base
                            provider:auth.provider,
                            uid:auth.uid,
                            email:auth.info.email,
+                           oauth_token:auth.credentials.token,
+                           oauth_expires_at:Time.at(auth.credentials.expires_at),
                            password:Devise.friendly_token[0,20]
                            )
     end

@@ -8,6 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
+    <div id="user-widget">
+      <% if current_user %>
+        Welcome <strong><%= current_user.name %></strong>!
+        <%= link_to "Sign out", signout_path, id: "sign_out" %>
+      <% else %>
+        <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+      <% end %>
+    </div>    
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <div class="container">
