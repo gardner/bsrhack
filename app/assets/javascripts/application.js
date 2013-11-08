@@ -16,4 +16,7 @@
 //= require bootstrap
 //= require turbolinks
 //= require the_comments
+//= require PerfectWidgets.js
+//= require mscorlib.js
 //= require_tree .
+
